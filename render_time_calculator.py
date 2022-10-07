@@ -1,3 +1,7 @@
-//just a quick one-liner to make a rough estimate of how long it takes to render a number of frames based on an average time. set the hrs, mins, sec to the exact or approximate duration of one significant frame in your animation, times the number of frames to render (framecnt). The result is an estimate of when the rendering will be completed. Nothing fancy, run this in a python command line anywhere, like CMD, Maya, Houdini or anywhere you have a working python shell. The script requires to call datetime for time calculations.
-
-hrs = 0; mins = 6; sec = 15; framecnt = 1200; import datetime; etastring = (datetime.datetime.now() + (datetime.timedelta(hours=hrs, minutes=mins, seconds=sec)*framecnt)); print(etastring.strftime("Current rendering is estimated to complete on %A, %B %d %Y, at %I:%M:%S %p"));
+hrs = 0; 
+mins = 6; 
+sec = 15; 
+framecnt = 1200; 
+import datetime;
+etastring = (datetime.datetime.now() + (datetime.timedelta(hours=hrs, minutes=mins, seconds=sec)*framecnt)); 
+print(etastring.strftime("Current rendering is estimated to complete on %A, %B %d %Y, at %I:%M:%S %p"));
